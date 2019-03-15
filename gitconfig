@@ -1,0 +1,37 @@
+[https]
+    proxy = socks5://127.0.0.1:1086
+[http]
+    proxy = socks5://127.0.0.1:1086
+[core]
+    editor = vim
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[user]
+    name = mutoo
+    email = loopless.z@outlook.com
+[i18n]
+    logoutputencoding = gbk
+
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+	ui = true
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+    stripLeadingSymbols = false
+    markEmptyLines = false
+
