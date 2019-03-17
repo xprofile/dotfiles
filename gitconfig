@@ -6,8 +6,8 @@
     editor = vim
     pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
-    name = mutoo
-    email = loopless.z@outlook.com
+    name = Zeng.Yajian
+    email = zeng.yajian@icloud.com
 [i18n]
     logoutputencoding = gbk
 

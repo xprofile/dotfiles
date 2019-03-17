@@ -17,6 +17,8 @@ Plug 'w0rp/ale'
 
 Plug 'tomasr/molokai'
 Plug 'joshdick/onedark.vim'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 

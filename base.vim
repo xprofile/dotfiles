@@ -34,9 +34,11 @@ set number
 set ruler
 set hlsearch
 
-set background=dark
 syntax on
-colorscheme onedark
+set termguicolors
+set background=dark
+let ayucolor="dark"
+colorscheme ayu
 
 " See [http://vim.wikia.com/wiki/Highlight_unwanted_spaces]
 " - highlight trailing whitespace in red
@@ -69,10 +71,13 @@ set tags=./.tags;,.tags
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Use_Right_Window   = 1
 
+"" java highlight config
+let g:java_highlight_java_lang_ids = 1
 
 "" ---------------------------- airline ---------------------------""
 
-let g:airline_theme='tomorrow'
+"let g:airline_theme='tomorrow'
+let g:airline_theme='ayu'
 let g:airline_powerline_fonts=1
 
 if !exists('g:airline_symbols')
@@ -89,6 +94,9 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 "" ---------------------------- key map --------------------------""
+"" Clear last search highlight
+nnoremap <silent> <C-c> :noh<CR>
+
 "" for vim-buftabline
 nnoremap <TAB> :bnext<CR>
 
